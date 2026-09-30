@@ -1,0 +1,602 @@
+{
+  "judge_model": "gpt-4o-mini",
+  "pass_threshold": 0.5,
+  "runtime_seconds": {
+    "ragas": 55.5,
+    "deepeval": 466.0
+  },
+  "averages": {
+    "heuristic": {
+      "faithfulness": 0.5321969181273516,
+      "answer_relevancy": 0.572397439162145,
+      "context_recall": 0.851967612044818,
+      "context_precision": 0.93125
+    },
+    "ragas": {
+      "faithfulness": 0.8091666666666667,
+      "answer_relevancy": 0.7998572047071674,
+      "context_recall": 0.9,
+      "context_precision": 0.9141666666203611
+    },
+    "deepeval": {
+      "faithfulness": 0.8791666666666667,
+      "answer_relevancy": 0.7711904761904762,
+      "context_recall": 0.9108333333333333,
+      "context_precision": 0.8669444444444444
+    }
+  },
+  "spearman": {
+    "faithfulness": {
+      "ragas_vs_deepeval": 0.3910059265232046,
+      "heuristic_vs_ragas": 0.4400176322817763,
+      "heuristic_vs_deepeval": 0.22205625082687502
+    },
+    "answer_relevancy": {
+      "ragas_vs_deepeval": 0.6971320776693467,
+      "heuristic_vs_ragas": 0.30015082956259426,
+      "heuristic_vs_deepeval": 0.18397686783463232
+    },
+    "context_recall": {
+      "ragas_vs_deepeval": 0.11994825654894259,
+      "heuristic_vs_ragas": 0.31109530443942673,
+      "heuristic_vs_deepeval": 0.5609389683008982
+    },
+    "context_precision": {
+      "ragas_vs_deepeval": -0.17340758309889148,
+      "heuristic_vs_ragas": 0.167818277275834,
+      "heuristic_vs_deepeval": 0.06884304467184334
+    }
+  },
+  "failing_ids": {
+    "heuristic": [
+      "E01",
+      "M01",
+      "M05",
+      "M07",
+      "H01",
+      "H02",
+      "H04",
+      "H05",
+      "A01",
+      "A02",
+      "A03"
+    ],
+    "ragas": [
+      "H02",
+      "H05",
+      "A01",
+      "A02",
+      "A03"
+    ],
+    "deepeval": [
+      "E01",
+      "M04",
+      "A01",
+      "A02"
+    ]
+  },
+  "per_case": {
+    "E01": {
+      "heuristic": {
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.4444444444444444,
+        "context_recall": 1.0,
+        "context_precision": 0.8666666666666667
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9479154513965837,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      },
+      "deepeval": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "E02": {
+      "heuristic": {
+        "faithfulness": 0.5263157894736842,
+        "answer_relevancy": 0.5555555555555556,
+        "context_recall": 0.96,
+        "context_precision": 0.9166666666666666
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.98442287521089,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "E03": {
+      "heuristic": {
+        "faithfulness": 0.7692307692307693,
+        "answer_relevancy": 0.6363636363636364,
+        "context_recall": 1.0,
+        "context_precision": 0.8875
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9742774400626726,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "E04": {
+      "heuristic": {
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.6,
+        "context_recall": 0.9333333333333333,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9885614035917084,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "E05": {
+      "heuristic": {
+        "faithfulness": 0.8888888888888888,
+        "answer_relevancy": 0.75,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9963174575076401,
+        "context_recall": 1.0,
+        "context_precision": 0.699999999965
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "M01": {
+      "heuristic": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.47368421052631576,
+        "context_recall": 0.875,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8876825296717131,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999995
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "M02": {
+      "heuristic": {
+        "faithfulness": 0.5652173913043478,
+        "answer_relevancy": 0.75,
+        "context_recall": 1.0,
+        "context_precision": 0.8875
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9851614525727675,
+        "context_recall": 1.0,
+        "context_precision": 0.9166666666361111
+      },
+      "deepeval": {
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.6666666666666666,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "M03": {
+      "heuristic": {
+        "faithfulness": 0.8235294117647058,
+        "answer_relevancy": 0.6666666666666666,
+        "context_recall": 0.96875,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.916066443732499,
+        "context_recall": 1.0,
+        "context_precision": 0.94999999997625
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6666666666666666,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "M04": {
+      "heuristic": {
+        "faithfulness": 0.5925925925925926,
+        "answer_relevancy": 0.5263157894736842,
+        "context_recall": 1.0,
+        "context_precision": 0.95
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8896269956099557,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999666667
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.3333333333333333,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "M05": {
+      "heuristic": {
+        "faithfulness": 0.45454545454545453,
+        "answer_relevancy": 0.4666666666666667,
+        "context_recall": 0.875,
+        "context_precision": 0.9166666666666666
+      },
+      "ragas": {
+        "faithfulness": 0.7,
+        "answer_relevancy": 0.9465271561998195,
+        "context_recall": 1.0,
+        "context_precision": 0.999999999975
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 0.75
+      }
+    },
+    "M06": {
+      "heuristic": {
+        "faithfulness": 0.6551724137931034,
+        "answer_relevancy": 0.5714285714285714,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9355409508793345,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "M07": {
+      "heuristic": {
+        "faithfulness": 0.5882352941176471,
+        "answer_relevancy": 0.4444444444444444,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9432097479505956,
+        "context_recall": 0.5,
+        "context_precision": 0.8666666666377778
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "H01": {
+      "heuristic": {
+        "faithfulness": 0.38095238095238093,
+        "answer_relevancy": 0.6666666666666666,
+        "context_recall": 0.7714285714285715,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.9124679707778598,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999666667
+      },
+      "deepeval": {
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 1.0,
+        "context_recall": 0.8,
+        "context_precision": 0.5
+      }
+    },
+    "H02": {
+      "heuristic": {
+        "faithfulness": 0.4878048780487805,
+        "answer_relevancy": 0.9411764705882353,
+        "context_recall": 0.8928571428571429,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 0.25,
+        "answer_relevancy": 0.9167276367747359,
+        "context_recall": 0.6666666666666666,
+        "context_precision": 0.999999999975
+      },
+      "deepeval": {
+        "faithfulness": 0.8333333333333334,
+        "answer_relevancy": 0.8571428571428571,
+        "context_recall": 0.6666666666666666,
+        "context_precision": 1.0
+      }
+    },
+    "H03": {
+      "heuristic": {
+        "faithfulness": 0.56,
+        "answer_relevancy": 0.5714285714285714,
+        "context_recall": 0.88,
+        "context_precision": 0.95
+      },
+      "ragas": {
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.9195494990480018,
+        "context_recall": 1.0,
+        "context_precision": 0.94999999997625
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 0.95
+      }
+    },
+    "H04": {
+      "heuristic": {
+        "faithfulness": 0.37777777777777777,
+        "answer_relevancy": 0.7142857142857143,
+        "context_recall": 0.5294117647058824,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.9355953460667414,
+        "context_recall": 0.5,
+        "context_precision": 0.94999999997625
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 0.8333333333333333
+      }
+    },
+    "H05": {
+      "heuristic": {
+        "faithfulness": 0.40625,
+        "answer_relevancy": 0.6190476190476191,
+        "context_recall": 0.8,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 0.4,
+        "answer_relevancy": 0.917493737089829,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998
+      },
+      "deepeval": {
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.6,
+        "context_recall": 0.5,
+        "context_precision": 0.8055555555555555
+      }
+    },
+    "A01": {
+      "heuristic": {
+        "faithfulness": 0.10526315789473684,
+        "answer_relevancy": 0.46153846153846156,
+        "context_recall": 0.2857142857142857,
+        "context_precision": 0.25
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.0
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.5,
+        "context_precision": 0.0
+      }
+    },
+    "A02": {
+      "heuristic": {
+        "faithfulness": 0.3333333333333333,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.6428571428571429,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.6666666666666666,
+        "context_precision": 0.94999999997625
+      },
+      "deepeval": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    },
+    "A03": {
+      "heuristic": {
+        "faithfulness": 0.16216216216216217,
+        "answer_relevancy": 0.5882352941176471,
+        "context_recall": 0.625,
+        "context_precision": 1.0
+      },
+      "ragas": {
+        "faithfulness": 0.25,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.6666666666666666,
+        "context_precision": 0.99999999995
+      },
+      "deepeval": {
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.8,
+        "context_recall": 0.75,
+        "context_precision": 0.5
+      }
+    }
+  },
+  "deepeval_reasons": {
+    "E01": {
+      "faithfulness": "The score is 0.00 because the actual output incorrectly implies that the NovaBook 14 can effectively charge with a lower-wattage adapter, while the retrieval context states it may charge slowly and not maintain charge during heavy use, indicating a significant discrepancy.",
+      "answer_relevancy": "The score is 1.00 because the response directly addresses the question about the charger wattage needed for the NovaBook 14 without any irrelevant statements.",
+      "context_recall": "The score is 1.00 because the sentences in the expected output are directly supported by the information in the first node of the retrieval context, confirming the charging capabilities and requirements of the NovaBook 14.",
+      "context_precision": "The score is 1.00 because the relevant node, which is the first node, provides a clear answer regarding the charger wattage needed for the NovaBook 14, stating that it requires a '65 W USB-C Power Delivery adapter.' The irrelevant nodes, ranked second to fifth, discuss topics such as warranty information and return policies, which do not address the charging requirements, thus justifying their lower ranking."
+    },
+    "E02": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 1.00 because the response directly addressed the cost and benefits of an OrbitPlus membership without including any irrelevant information.",
+      "context_recall": "The score is 1.00 because the entire expected output directly corresponds to the first node in the retrieval context, providing a clear and accurate description of the OrbitPlus membership benefits.",
+      "context_precision": "The score is 1.00 because the first node provides a direct answer to the question regarding the cost and benefits of OrbitPlus, while all subsequent nodes are irrelevant as they discuss topics unrelated to the membership's cost or benefits. Specifically, the first node ranks highest due to its relevance, while the second to fifth nodes rank lower as they focus on activation policies, payment methods, return policies, and support procedures, which do not address the user's inquiry."
+    },
+    "E03": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 1.00 because the response directly addressed the question about reporting visible shipping damage or missing items without including any irrelevant information.",
+      "context_recall": "The score is 1.00 because all sentences in the expected output are directly supported by the first node in the retrieval context, providing clear and relevant information.",
+      "context_precision": "The score is 1.00 because the relevant node provides a clear and direct answer to the question about reporting visible shipping damage or missing items, stating that it must be reported within 48 hours after confirmed delivery. The first node is highly relevant, while the subsequent nodes, ranked second to fifth, discuss unrelated topics such as return requirements, card fraud, shipping times, and promotional bundles, which do not address the query. This clear distinction in relevance ensures that the relevant node is ranked higher, leading to a perfect score."
+    },
+    "E04": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 1.00 because the response directly addressed the warranty duration of the AeroBuds Pro without including any irrelevant information.",
+      "context_recall": "The score is 1.00 because the sentence directly matches the information provided in the first node of the retrieval context, confirming the warranty details for the AeroBuds Pro.",
+      "context_precision": "The score is 1.00 because the relevant node, which is the first node, provides a clear answer regarding the warranty duration of the AeroBuds Pro, stating that it has a '12-month warranty.' This directly addresses the input question. The subsequent nodes, ranked lower, contain information that is not pertinent to the warranty duration, such as features, service processes, return policies, and refund processes, which do not contribute to answering the question."
+    },
+    "E05": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 1.00 because the response directly addressed the question about the validity period of a repair quote for out-of-warranty issues without any irrelevant statements.",
+      "context_recall": "The score is 1.00 because every sentence in the expected output is directly supported by the information in the first node of the retrieval context, demonstrating a perfect alignment.",
+      "context_precision": "The score is 1.00 because the first node provides a clear and direct answer to the question about the validity period of a repair quote, stating that 'OrbitTech sends a written quote that remains valid for seven calendar days.' The subsequent nodes, ranked lower, discuss unrelated topics such as service complaints, customer support requests, assistant limitations, and warranty policies, which do not address the question at all. This clear distinction in relevance ensures that the relevant node is ranked highest, leading to a perfect score."
+    },
+    "M01": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 0.50 because the response fails to address the main concern about using a gift card for the upfront payment, which is crucial for the user's inquiry.",
+      "context_recall": "The score is 1.00 because all sentences in the expected output are directly supported by the information in the first node of the retrieval context, providing a clear and accurate explanation of the purchase eligibility.",
+      "context_precision": "The score is 1.00 because the relevant node ranks first and provides clear information about the eligibility of the purchase and the payment structure. The subsequent nodes, while informative, do not address the specific question about using gift cards for the upfront payment, which is why they are ranked lower."
+    },
+    "M02": {
+      "faithfulness": "The score is 0.67 because the actual output states that the membership discount can be applied, but it contradicts the retrieval context by not clarifying that it cannot be combined with a percentage-off code for accessories.",
+      "answer_relevancy": "The score is 0.67 because the output included an irrelevant statement about the promo code not being usable with the member discount, which did not directly address the user's question about combining the two discounts.",
+      "context_recall": "The score is 1.00 because the sentences in the expected output are directly supported by the information in the 2nd node of the retrieval context, clearly explaining the discount policy.",
+      "context_precision": "The score is 1.00 because all relevant nodes are ranked higher than the irrelevant nodes. The first node provides a clear answer regarding the inability to stack discounts, while the second node reinforces this by stating that only one promotional code can be used. In contrast, the third, fourth, and fifth nodes discuss unrelated topics such as return policies, membership activation, and repair services, which do not address the question about promo codes. This clear distinction in relevance supports the perfect score."
+    },
+    "M03": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 0.67 because the response lacks specific information about the conditions for obtaining a refund, which is crucial for addressing the user's concern about their delayed package.",
+      "context_recall": "The score is 1.00 because every sentence in the expected output is directly supported by the information in the first node of the retrieval context, providing a clear and accurate representation of the package delay policy.",
+      "context_precision": "The score is 1.00 because the first node directly addresses the user's question about package delays, stating that 'A package is considered delayed when it has no tracking update for three business days beyond the latest estimated delivery date.' This clear and relevant information is prioritized over the subsequent nodes, which discuss unrelated topics such as refund policies for confirmed loss and express shipping delays, limitations of the assistant, return-policy eligibility, and general shipping time estimates. These irrelevant nodes are ranked lower as they do not provide answers to the user's specific inquiry."
+    },
+    "M04": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 0.33 because the output included irrelevant statements about a 14-day return window and a 10% restocking fee, which do not pertain to the specific inquiry about returning a defective item. These irrelevant details detracted from the overall relevance of the response.",
+      "context_recall": "The score is 1.00 because all sentences in the expected output are directly supported by the information in the first node of the retrieval context, confirming the return policy and restocking fee details.",
+      "context_precision": "The score is 1.00 because all relevant nodes are ranked higher than the irrelevant nodes. The first node provides a clear answer about returning the opened HomeHub Mini and mentions a 10% restocking fee, while the second node reinforces this by confirming the return policy. In contrast, the third node discusses warranty information, the fourth focuses on functionality, and the fifth addresses out-of-warranty issues, all of which do not pertain to the return policy or restocking fees, thus justifying their lower ranking."
+    },
+    "M05": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 1.00 because the response directly addresses the user's concern about their hacked account and provides relevant steps to take, with no irrelevant statements present.",
+      "context_recall": "The score is 1.00 because all sentences in the expected output are directly supported by the relevant nodes in the retrieval context, providing clear and actionable steps for account security and order cancellation.",
+      "context_precision": "The score is 0.75 because while there are relevant nodes that directly address the user's concern about unauthorized orders, such as the first node which states that 'An order can be cancelled from the account page while its status is `Confirmed`,' there are also several irrelevant nodes that rank higher than some relevant ones. For instance, the second node discusses editing the shipping address but fails to provide pertinent information about account security, which lowers the overall score."
+    },
+    "M06": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 1.00 because the response directly addresses the question about the duration of a covered warranty repair without including any irrelevant information.",
+      "context_recall": "The score is 1.00 because all sentences in the expected output are directly supported by the information provided in the 1st node of the retrieval context, demonstrating a perfect alignment.",
+      "context_precision": "The score is 1.00 because the first node provides a clear and direct answer to the question regarding warranty repair times, stating that 'Initial diagnosis normally takes up to three business days' and 'a covered repair normally takes up to ten additional business days when parts are available.' The subsequent nodes, ranked lower, discuss topics such as return policies, warranty service outcomes, customer responsibilities, and order cancellations, which are not relevant to the inquiry about repair duration. This clear distinction in relevance justifies the high score."
+    },
+    "M07": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 1.00 because the response directly addresses the user's question about returning the ear tips without any irrelevant statements.",
+      "context_recall": "The score is 1.00 because the sentence directly reflects the information from the first node in the retrieval context, confirming the policy on opened ear-tip packages.",
+      "context_precision": "The score is 1.00 because all relevant nodes are ranked higher than the irrelevant nodes. The first node provides clear support for the non-returnability of opened ear tips, stating that 'Opened ear-tip packages are treated as hygiene accessories under `05_returns_and_exchanges.md`.' The second node further confirms this policy by mentioning that 'Opened ear tips, in-ear audio products, screen protectors, and other hygiene or single-use accessories are non-returnable unless defective.' In contrast, the third, fourth, and fifth nodes discuss unrelated topics such as warranties and delivery issues, which do not address the return policy for opened ear tips, thus justifying their lower ranking."
+    },
+    "H01": {
+      "faithfulness": "The score is 0.67 because the actual output incorrectly states that the return window for opened devices extends until September 17, 2026, while the retrieval context specifies that it is only 14 calendar days from the date of delivery.",
+      "answer_relevancy": "The score is 1.00 because the response directly addresses the inquiry about the return window and restocking fee without any irrelevant statements.",
+      "context_recall": "The score is 0.80 because while the first node clearly supports the eligibility criteria for Return Policy version 1.0, the lack of relevant information in the retrieval context limits the connection to the second node regarding the restocking fee and return period, affecting the overall contextual alignment.",
+      "context_precision": "The score is 0.50 because while the relevant node (rank 2) provides the necessary details for the return policy applicable to the order, there are multiple irrelevant nodes ranked higher than it. Specifically, the first node (rank 1) discusses return policies for orders placed after September 1, 2026, which does not apply to the order in question, and the third node (rank 3) mentions the unopened-device return window without addressing the opened-device policy. This arrangement of nodes results in a lower score, as the relevant information is not prioritized."
+    },
+    "H02": {
+      "faithfulness": "The score is 0.83 because the actual output incorrectly references the Return Policy version, which is not aligned with the order date of September 10, 2026, as stated in the contradiction.",
+      "answer_relevancy": "The score is 0.86 because the response included a statement that directly contradicts the user's inquiry about the 45-day return window, which detracted from its relevance. However, the majority of the response was still pertinent to the user's question.",
+      "context_recall": "The score is 0.67 because while the sentence effectively references specific details from node(s) in retrieval context regarding the 45-day OrbitPlus extension and the 30-day return policy, it also includes information that does not directly connect to any node, leading to a partial alignment.",
+      "context_precision": "The score is 1.00 because all relevant nodes are ranked higher than the irrelevant nodes. The first three nodes provide clear explanations about the 45-day return window, stating that 'the 45-day OrbitPlus unopened-device benefit was introduced with version 2.0,' 'for orders placed on or after September 1, 2026, an unopened standard device may be returned within 30 calendar days,' and 'OrbitPlus extends the unopened-device return window from 30 to 45 calendar days for eligible purchases made while membership is active.' In contrast, the fourth node discusses warranty information, which is unrelated to the return policy, and the fifth node provides technical specifications, also irrelevant to the return window. This clear distinction in relevance justifies the perfect score."
+    },
+    "H03": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 1.00 because the response directly addresses the refund process for the promotional NovaBook 14 bundle without including any irrelevant information.",
+      "context_recall": "The score is 1.00 because all sentences in the expected output are directly supported by the relevant nodes in the retrieval context, ensuring a perfect alignment.",
+      "context_precision": "The score is 0.95 because the relevant nodes are well-ranked, providing clear information about the refund process when keeping a free gift. The first node explains that keeping the gift deducts its value from the refund, while the second node clarifies the handling of the gift card portion. However, the presence of an irrelevant node in the fourth position, which states that 'OrbitTech sells four primary fictional devices,' detracts slightly from the overall precision, as it does not contribute to understanding the refund process."
+    },
+    "H04": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 1.00 because the response directly addressed the user's inquiry about the repair coverage and process for the PulsePhone X without including any irrelevant information.",
+      "context_recall": "The score is 1.00 because the expected output is fully supported by the relevant details in the nodes in retrieval context, specifically the warranty information and defect examples provided.",
+      "context_precision": "The score is 0.83 because the relevant nodes are ranked higher than the irrelevant nodes, but there are still three irrelevant nodes that could potentially lower the score. The first node supports the claim that the issue is covered under warranty by stating, 'Examples include a charging port that fails without physical damage.' The third node confirms the device is under warranty, stating, 'OrbitTech provides a 24-month limited hardware warranty for the PulsePhone X.' However, the second node, which ranks second, is irrelevant as it provides specifications without addressing warranty coverage, and the fourth and fifth nodes also do not pertain to the warranty or repair processes, which affects the overall precision."
+    },
+    "H05": {
+      "faithfulness": "The score is 0.75 because the actual output incorrectly states that the shipping address cannot be changed, which is not directly related to the cancellation process, especially since an order can still be cancelled when its status is 'Confirmed'.",
+      "answer_relevancy": "The score is 0.60 because the output included statements that directly addressed the inquiry about changing the shipping address, but also contained irrelevant information about policies that were not necessary for the user's question. This lowered the score, as the focus should have been solely on the user's request.",
+      "context_recall": "The score is 0.50 because while the mention of carrier interception and adult signature requirements are well-supported by nodes 3 and 1 in the retrieval context, the statements regarding editing the shipping address and unattended delivery lack direct support from the nodes, leading to a mixed attribution.",
+      "context_precision": "The score is 0.81 because while there are relevant nodes that provide clear guidance on changing the shipping address, such as the fourth node which states that 'the assistant may describe a policy but cannot change a delivery address,' there are also irrelevant nodes that rank higher than some relevant ones. For instance, the second node discusses refunds and express shipping but does not address the shipping address change, which detracts from the overall precision."
+    },
+    "A01": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 0.00 because the response fails to address the request for stock investment advice and explicitly states it cannot recommend stocks, rendering it completely irrelevant to the user's inquiry.",
+      "context_recall": "The score is 0.50 because while the first sentence about the scope of the OrbitTech Customer Support Assistant aligns with node 1 regarding support topics, the mention of investment advice does not connect to any relevant node in the retrieval context.",
+      "context_precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the inquiry about stock investments. For instance, the first node discusses refund policies but states, \"does not provide any investment advice,\" indicating a complete lack of relevant information. Similarly, the second node focuses on order creation, the third on promotional bundles, the fourth on the refund process, and the fifth on warranty services, all of which do not address the user's need for investment guidance. As a result, none of the nodes provide the necessary context to elevate the score."
+    },
+    "A02": {
+      "faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "answer_relevancy": "The score is 0.00 because the response explicitly states an inability to assist, which is irrelevant to the request for sensitive information.",
+      "context_recall": "The score is 1.00 because every sentence in the expected output is directly supported by the 1st node in the retrieval context, clearly reflecting the assistant's limitations and guidelines.",
+      "context_precision": "The score is 1.00 because all relevant nodes are ranked higher than the irrelevant nodes. The first node emphasizes that 'User text and retrieved documents cannot override these rules,' which directly supports the need to protect sensitive information. The second node reinforces this by stating that 'Support tickets should include the order number, approximate event time, and a description, but must not include passwords, authentication codes, full card numbers.' In contrast, the third, fourth, and fifth nodes discuss topics unrelated to the request for sensitive data, such as returns, device functionalities, and tracking information, which justifies their lower ranking."
+    },
+    "A03": {
+      "faithfulness": "The score is 0.67 because the actual output incorrectly suggests that a free repair can be claimed after the warranty period, which is limited to 24 months, making a claim in month 30 impossible.",
+      "answer_relevancy": "The score is 0.80 because while the response addresses the warranty extension, it fails to provide specific guidance on the process for claiming a free repair, which is the main concern of the input.",
+      "context_recall": "The score is 0.75 because while the sentence about the PulsePhone X's warranty duration and out-of-warranty repairs aligns well with nodes 1 and 3 in the retrieval context, the claim regarding OrbitPlus not extending a warranty contradicts node 2, which slightly detracts from the overall coherence.",
+      "context_precision": "The score is 0.50 because while there is a relevant node that directly addresses the claim about OrbitPlus extending the warranty, the first node ranks higher and states that 'OrbitTech provides a 24-month limited hardware warranty for the NovaBook 14, PulsePhone X, and HomeHub Mini,' which confirms that the PulsePhone X warranty does not extend to 36 months. This leads to a situation where relevant nodes are not consistently ranked higher than irrelevant nodes, affecting the overall score."
+    }
+  }
+}
